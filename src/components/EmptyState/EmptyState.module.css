@@ -1,0 +1,50 @@
+.es_container {
+  background: var(--surface-container-lowest);
+  border: 1px solid var(--outline-variant);
+}
+
+.es_iconWrapper {
+  background: var(--surface-container-low);
+}
+
+.es_text {
+  color: var(--on-surface-variant);
+}
+
+.es_subText {
+  color: var(--secondary);
+}
+.container {
+	padding: 48px 24px;
+	border-radius: 12px;
+	text-align: center;
+	background: var(--surface-container-lowest);
+}
+
+.iconWrapper {
+	width: 64px;
+	height: 64px;
+	margin: 0 auto 16px;
+	border-radius: 9999px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--surface-container);
+	color: var(--primary);
+}
+
+.icon {
+	font-size: 32px;
+	line-height: 1;
+}
+
+.text {
+	font-size: 16px;
+	color: var(--on-surface);
+}
+
+.subText {
+	margin-top: 4px;
+	font-size: 12px;
+	color: var(--on-surface-variant);
+}

@@ -1,0 +1,19 @@
+.Rb__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Rb__field input {
+    height: 54px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 0 16px;
+    width: 100%;
+}
+.Rb__field input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(244, 196, 48, 0.15);
+}

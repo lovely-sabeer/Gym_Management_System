@@ -1,0 +1,80 @@
+.h_header {
+    background: var(--surface-container-lowest);
+    border-bottom: 1px solid var(--outline-variant);
+}
+
+.h_greeting {
+    color: var(--secondary);
+}
+
+.h_name {
+    color: var(--on-surface);
+}
+
+.h_icon {
+    color: var(--on-surface-variant);
+}
+
+.h_avatar {
+    background: var(--primary-container);
+    color: var(--on-primary-container);
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 420px;
+    height: 60px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 50;
+    background: var(--surface-container-lowest);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--outline-variant);
+    box-shadow: var(--shadow-surface);
+}
+
+.textBlock {
+    min-width: 0;
+}
+
+.greeting {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    color: var(--on-surface-variant);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--on-surface);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--on-primary-container);
+    background: var(--primary-container);
+    cursor: pointer;
+}

@@ -1,0 +1,186 @@
+.Sm__container {
+    max-width: 420px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: #fff8f1;
+    position: relative;
+    padding-bottom: 100px;
+    font-family: "Manrope", sans-serif;
+}
+
+.Sm__header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.Sm__headerLeft,
+.Sm__headerRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Sm__profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Sm__header h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Sm__countBadge {
+    background: rgba(244, 196, 48, 0.2);
+    color: #755b00;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.Sm__iconButton {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.Sm__addButton {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background: #fff;
+    color: #755b00;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.Sm__staffList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Sm__staffCard {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.Sm__expandedCard {
+    border: 1px solid rgba(244, 196, 48, 0.4);
+}
+
+.Sm__staffTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.Sm__staffLeft {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.Sm__staffImage {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Sm__staffLeft h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.Sm__staffLeft p {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #777;
+}
+
+.Sm__expandedContent {
+    border-top: 1px solid #eee;
+    padding: 16px;
+}
+
+.Sm__detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.Sm__detailsGrid small {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.Sm__detailsGrid p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.Sm__actionRow {
+    display: flex;
+    gap: 10px;
+}
+
+.Sm__actionRow button {
+    flex: 1;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.Sm__deleteButton {
+    flex: unset !important;
+    width: 50px;
+    background: #ffdad6 !important;
+}
+
+@media (max-width: 480px) {
+    .Sm__grid,
+    .Sm__detailsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .Sm__actionRow {
+        flex-direction: column;
+    }
+
+    .Sm__deleteButton {
+        width: 100%;
+    }
+}

@@ -1,0 +1,368 @@
+.St__container {
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 90px;
+	width: 100%;
+}
+
+.St__header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.St__headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.St__profileWrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #eee;
+}
+
+.St__profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.St__header h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.St__iconButton {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.St__main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.St__card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.St__sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.St__sectionHeader h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.St__infoGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.St__infoBlock {
+    margin-top: 18px;
+}
+
+.St__infoGrid small,
+.St__infoBlock small {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.St__infoGrid p,
+.St__infoBlock p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.St__buttonRow {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.St__outlineButton {
+	height: 44px;
+	border-radius: 12px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+    background: transparent;
+    border: 1px solid #ccc;
+}
+
+.St__primaryButton {
+	height: 44px;
+	border-radius: 12px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+    background: #f4c430;
+    border: none;
+}
+
+.St__titleRow h2,
+.St__sectionTitle,
+.St__dangerTitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.St__dangerTitle {
+    color: #c62828;
+}
+
+.St__planItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+
+.St__planBorder {
+    border-bottom: 1px solid #eee;
+}
+
+.St__planLeft {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.St__planIcon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba(244, 196, 48, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.St__activePlanIcon {
+    background: #f4c430;
+}
+
+.St__planLeft h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.St__planLeft p {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #777;
+}
+
+.St__planActions {
+    display: flex;
+    gap: 8px;
+}
+
+.St__planActions button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.St__addPlanButton {
+    width: 100%;
+    margin-top: 16px;
+    height: 52px;
+    border: 2px dashed #ccc;
+    border-radius: 16px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.St__staffButton {
+    width: 100%;
+    background: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.St__staffLeft {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.St__staffIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.St__toggleRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.St__toggleRow + .St__toggleRow {
+    margin-top: 24px;
+}
+
+.St__toggleRow h4 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.St__toggleRow p {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #777;
+}
+
+.St__toggle,
+.St__toggleActive {
+    width: 50px;
+    height: 28px;
+    border-radius: 999px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.St__toggle {
+    background: #ddd;
+}
+
+.St__toggleActive {
+    background: #f4c430;
+    justify-content: flex-end;
+}
+
+.St__toggleCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.St__dangerButton {
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(198, 40, 40, 0.2);
+    border-radius: 18px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #c62828;
+    cursor: pointer;
+}
+
+.St__dangerLeft {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.St__logoutSection {
+    padding-bottom: 20px;
+}
+
+.St__logoutButton {
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 16px;
+    background: #111;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.St__version {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+
+.St__bottomNav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 420px;
+    height: 68px;
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.St__bottomNav button {
+    border: none;
+    background: transparent;
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.St__activeNav {
+    color: #f4c430 !important;
+}
+
+@media (max-width: 480px) {
+    .St__infoGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .St__buttonRow {
+        flex-direction: column;
+    }
+}

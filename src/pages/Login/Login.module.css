@@ -1,0 +1,246 @@
+:root {
+    --primary: #f4c430;
+    --radius: 16px;
+    --shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+.Lg__container {
+    min-height: 100vh;
+    background: #f5f5f5;
+    font-family: Manrope, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.Lg__main {
+    width: 100%;
+    max-width: 420px;
+}
+.Lg__logoSection {
+    text-align: center;
+    margin-bottom: 24px;
+    animation: fade 0.4s ease;
+}
+.Lg__logoBox {
+    width: 84px;
+    height: 84px;
+    margin: auto;
+    border-radius: 24px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+.Lg__logoBox span {
+    font-size: 42px;
+}
+.Lg__logoSection h1 {
+    margin: 16px 0 4px;
+    font-size: 32px;
+}
+.Lg__logoSection p {
+    font-size: 12px;
+    color: #777;
+    letter-spacing: 2px;
+}
+.Lg__card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Lg__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Lg__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Lg__inputWrapper {
+    position: relative;
+}
+.Lg__inputWrapper span {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+.Lg__field input {
+    height: 54px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 0 16px 0 42px;
+    width: 100%;
+}
+.Lg__eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+.Lg__forgotWrapper {
+    text-align: right;
+}
+.Lg__forgotWrapper a,
+.Lg__registerSection span {
+    cursor: pointer;
+    color: #755b00;
+    font-weight: 700;
+}
+.Lg__loginButton {
+    height: 54px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--primary);
+    font-weight: 800;
+    cursor: pointer;
+}
+.Lg__registerSection {
+    text-align: center;
+    margin-top: 20px;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+:root {
+    --primary: #f4c430;
+    --radius: 16px;
+    --shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+.Lg__container {
+    min-height: 100vh;
+    background: #f5f5f5;
+    font-family: Manrope, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.Lg__main {
+    width: 100%;
+    max-width: 420px;
+}
+.Lg__logoSection {
+    text-align: center;
+    margin-bottom: 24px;
+    animation: fade 0.4s ease;
+}
+.Lg__logoBox {
+    width: 84px;
+    height: 84px;
+    margin: auto;
+    border-radius: 24px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+.Lg__logoBox span {
+    font-size: 42px;
+}
+.Lg__logoSection h1 {
+    margin: 16px 0 4px;
+    font-size: 32px;
+}
+.Lg__logoSection p {
+    font-size: 12px;
+    color: #777;
+    letter-spacing: 2px;
+}
+.Lg__card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Lg__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Lg__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.Lg__inputWrapper {
+    position: relative;
+}
+.Lg__inputWrapper span {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+.Lg__field input {
+    height: 54px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 0 16px 0 42px;
+    width: 100%;
+}
+.Lg__eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+.Lg__forgotWrapper {
+    text-align: right;
+}
+.Lg__forgotWrapper a,
+.Lg__registerSection span {
+    cursor: pointer;
+    color: #755b00;
+    font-weight: 700;
+}
+.Lg__loginButton {
+    height: 54px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--primary);
+    font-weight: 800;
+    cursor: pointer;
+}
+.Lg__registerSection {
+    text-align: center;
+    margin-top: 20px;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}

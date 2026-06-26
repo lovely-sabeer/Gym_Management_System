@@ -1,0 +1,63 @@
+.r_card {
+  background: var(--surface-container-lowest);
+  border: 1px solid var(--outline-variant);
+}
+
+.r_card_dark {
+  background: var(--inverse-surface);
+}
+
+.r_title {
+  color: var(--secondary);
+}
+
+.r_value {
+  color: var(--on-surface);
+}
+
+.r_value_highlight {
+  color: var(--inverse-primary);
+}
+
+.r_error {
+  color: var(--error);
+}
+.card {
+	min-height: 96px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 12px;
+}
+
+.cardBase {
+	background: var(--surface-container-lowest);
+}
+
+.cardHighlight {
+	background: var(--primary-container);
+}
+
+.title {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: var(--secondary);
+}
+
+.value {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.valueBase {
+	color: var(--on-surface);
+}
+
+.valueHighlight {
+	color: var(--on-primary-container);
+}
+
+.valueError {
+	color: var(--error);
+}

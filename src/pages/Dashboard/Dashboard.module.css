@@ -1,0 +1,35 @@
+.page{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.cardsGrid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 12px;
+}
+
+.sectionHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.sectionTitle {
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--on-surface);
+}
+
+.sectionAction {
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--primary);
+}
+
+.Pl__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

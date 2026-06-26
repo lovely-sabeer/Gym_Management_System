@@ -1,0 +1,9 @@
+.rc_container {
+  background: var(--surface-container-lowest);
+  border: 1px solid var(--outline-variant);
+}
+.container {
+	border-radius: 12px;
+	padding: 8px;
+	background: var(--surface-container-lowest);
+}

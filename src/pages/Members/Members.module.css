@@ -1,0 +1,232 @@
+
+.tabsRow {
+	display: flex;
+	gap: 8px;
+	overflow-x: auto;
+	scrollbar-width: none;
+}
+
+.tabsRow::-webkit-scrollbar {
+	display: none;
+}
+
+.tab {
+	flex-shrink: 0;
+	border-radius: 9999px;
+	border: 1px solid var(--outline-variant);
+	padding: 8px 16px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+	background: var(--surface-container-lowest);
+	color: var(--on-surface-variant);
+}
+
+.tabActive {
+	background: var(--primary-container);
+	border-color: var(--primary-container);
+	color: var(--on-primary-container);
+}
+
+.tabInactive:active {
+	background: var(--surface-container);
+}
+
+.list {
+	margin-top: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.memberCard {
+	background: var(--surface-container-lowest);
+	border-radius: 8px;
+	box-shadow: var(--shadow-soft);
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.memberCardCollapsed {
+	padding: 16px;
+}
+
+.memberCardHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.memberCardHeaderExpanded {
+	padding: 16px;
+}
+
+.memberGroup {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	min-width: 0;
+}
+
+.avatar {
+	width: 48px;
+	height: 48px;
+	border-radius: 9999px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	flex-shrink: 0;
+}
+
+.avatarPrimary {
+	background: var(--primary-container);
+	color: var(--on-primary-container);
+}
+
+.avatarDueSoon {
+	background: var(--warning-container);
+	color: var(--on-warning-container);
+}
+
+.avatarOverdue {
+	background: var(--danger-container);
+	color: var(--on-danger-container);
+}
+
+.avatarMuted {
+	background: var(--surface-variant);
+	color: var(--secondary);
+}
+
+.memberText {
+	min-width: 0;
+}
+
+.memberName {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	color: var(--on-surface);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.memberMeta {
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 600;
+	color: var(--on-surface-variant);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.memberSide {
+	text-align: right;
+	flex-shrink: 0;
+}
+
+.status {
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 9999px;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.statusActive {
+	background: var(--success-container);
+	color: var(--on-success-container);
+}
+
+.statusDueSoon {
+	background: var(--warning-container);
+	color: var(--on-warning-container);
+}
+
+.statusOverdue {
+	background: var(--danger-container);
+	color: var(--on-danger-container);
+}
+
+.plan {
+	margin-top: 4px;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 600;
+	color: var(--secondary);
+}
+
+.actions {
+	background: var(--surface-container-low);
+	padding: 12px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.actionGroup {
+	display: flex;
+	gap: 8px;
+}
+
+.actionButton {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 8px 12px;
+	border-radius: 8px;
+	background: var(--surface-container-lowest);
+	border: 1px solid var(--outline-variant);
+	color: var(--on-surface-variant);
+	font-size: 12px;
+	font-weight: 700;
+	transition: background-color 150ms ease;
+}
+
+.actionIcon {
+	font-size: 18px;
+	line-height: 1;
+}
+
+.actionIconButton {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	background: var(--surface-container-lowest);
+	border: 1px solid var(--outline-variant);
+	color: var(--on-surface-variant);
+}
+
+.paymentButton {
+	flex: 1 1 auto;
+	border-radius: 8px;
+	padding: 10px 12px;
+	background: var(--primary-container);
+	color: var(--on-primary-container);
+	font-size: 14px;
+	font-weight: 700;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+	transition: transform 150ms ease;
+}
+
+.paymentButton:active {
+	transform: scale(0.98);
+}
+
+.spacer {
+	height: 32px;
+}

@@ -1,0 +1,251 @@
+
+
+.Pr__main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Pr__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Pr__field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #777;
+}
+
+.Pr__inputWrapper {
+    position: relative;
+}
+
+.Pr__inputWrapper span {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.Pr__inputWrapper input {
+    width: 100%;
+    height: 54px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background: #fff;
+    padding: 0 16px 0 48px;
+    outline: none;
+    font-size: 15px;
+}
+
+.Pr__amountInput {
+    font-size: 28px !important;
+    font-weight: 700;
+    color: #755b00;
+}
+
+.Pr__memberCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.Pr__memberLeft {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.Pr__avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Pr__memberLeft h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.Pr__planBadge {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(244, 196, 48, 0.15);
+    color: #755b00;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.Pr__dueBox {
+    text-align: right;
+}
+
+.Pr__dueBox small {
+    display: block;
+    color: #777;
+}
+
+.Pr__dueBox strong {
+    font-size: 18px;
+    color: #755b00;
+}
+
+.Pr__methodGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.Pr__methodCard,
+.Pr__methodActive {
+    border-radius: 16px;
+    padding: 16px 10px;
+    border: 2px solid #ddd;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Pr__methodActive {
+    background: #f4c430;
+    border-color: #f4c430;
+    color: #222;
+}
+
+.Pr__datePicker {
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Pr__dateLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Pr__dateLeft span:last-child {
+    font-size: 14px;
+}
+
+.Pr__field textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background: #fff;
+    padding: 16px;
+    resize: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.Pr__receiptCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #eee;
+}
+
+.Pr__receiptLeft {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.Pr__mailIcon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(244, 196, 48, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #755b00;
+}
+
+.Pr__receiptLeft h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.Pr__receiptLeft p {
+    margin: 4px 0 0;
+    font-size: 11px;
+    color: #777;
+}
+
+.Pr__toggle {
+    width: 52px;
+    height: 28px;
+    border-radius: 999px;
+    background: #f4c430;
+    padding: 4px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Pr__toggleCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.Pr__bottomBar {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 16px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.Pr__submitButton {
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 16px;
+    background: #f4c430;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+
+    .Pr__memberCard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Pr__dueBox {
+        text-align: left;
+    }
+}

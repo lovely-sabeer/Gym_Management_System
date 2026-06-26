@@ -1,0 +1,341 @@
+
+.Pl__cardContainer {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.Pl__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	cursor: pointer;
+}
+
+.Pl__left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.Pl__avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #ece4d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #755b00;
+    font-weight: 700;
+	overflow: hidden;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+
+.Pl__left h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.Pl__left p {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #777;
+}
+
+.Pl__right {
+    text-align: right;
+}
+
+.Pl__right strong {
+    display: block;
+    font-size: 18px;
+}
+
+.Pl__right span {
+    font-size: 11px;
+    color: #777;
+}
+
+.Pl__pill{
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 9999px;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.success {
+	background: var(--success-container);
+	color: var(--on-success-container);
+}
+
+.warning {
+	background: var(--warning-container);
+	color: var(--on-warning-container);
+}
+
+.danger {
+	background: var(--danger-container);
+	color: var(--on-danger-container);
+}
+
+.Emem__actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	padding-top: 16px;
+}
+
+.Emem__actionGroup {
+	display: flex;
+	gap: 8px;
+}
+
+.Emem__actionButton {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 8px 12px;
+	border-radius: 8px;
+	background: var(--surface-container-lowest);
+	border: 1px solid var(--outline-variant);
+	color: var(--on-surface-variant);
+	font-size: 12px;
+	font-weight: 700;
+	transition: background-color 150ms ease;
+}
+
+.Emem__actionIcon {
+	font-size: 18px;
+	line-height: 1;
+}
+
+.Emem__actionIconButton {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	background: var(--surface-container-lowest);
+	border: 1px solid var(--outline-variant);
+	color: var(--on-surface-variant);
+}
+
+.Emem__paymentButton {
+	flex: 1 1 auto;
+	border-radius: 8px;
+	padding: 10px 12px;
+	background: var(--primary-container);
+	color: var(--on-primary-container);
+	font-size: 14px;
+	font-weight: 700;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+	transition: transform 150ms ease;
+}
+
+.Emem__paymentButton:active {
+	transform: scale(0.98);
+}
+
+.Pl__expandWrapper {
+	overflow: hidden;
+	transition: max-height 300ms ease-in-out;
+}
+
+.Emem__actionButton,
+.Emem__actionIconButton,
+.Emem__paymentButton {
+	cursor: pointer;
+}
+
+
+.Bm__expanded {
+    padding-top: 16px;
+}
+
+.Bm__statsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.Bm__statCard {
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+}
+
+.Bm__statCard small {
+    display: block;
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.Bm__statCard strong {
+    font-size: 18px;
+}
+
+.Bm__green {
+    color: green;
+}
+
+.Bm__actionGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.Bm__actionGrid button {
+    border: 1px solid #ddd;
+    background: transparent;
+    border-radius: 12px;
+    padding: 10px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+
+}
+
+.Bm__actionGrid small {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.Sm__expandedContent {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+    padding-top: 8px;
+}
+
+.Sm__detailsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.Sm__small {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.Sm__detailsGrid p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.Sm__actionRow {
+	height: 100%;
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.Sm__reAssign {
+    border: none;
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.Sm__deleteButton {
+	border: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    background: #ffdad6;
+}
+
+.Pm__expanded {
+    padding: 16px 16px 0px 16px;
+}
+
+.Pm__expanded h4 {
+    margin: 0 0 14px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.Pm__featureList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Pm__featureList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.Pm__featureList span {
+    color: #755b00;
+    font-size: 18px;
+}
+
+.Pm__actionGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.Pm__actionGrid button {
+    border: none;
+    background: #f5f5f5;
+    border-radius: 14px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.Pm__actionGrid small {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.Pm__deleteButton {
+    background: #ffdad6 !important;
+    color: #93000a;
+}
