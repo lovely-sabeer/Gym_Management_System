@@ -71,7 +71,7 @@ const LandingPage = () => {
 			<header className={styles.Lp__header}>
 				<div className={styles.Lp__logo}>
 					<span className="material-symbols-outlined">fitness_center</span>
-					<h1>GymFlow</h1>
+					<h1>VIGOR OPS</h1>
 				</div>
 
 				<motion.button className={styles.Lp__headerButton} whileHover={{ scale: 1.05 }} whileTap={{ scale: .95 }} onClick={() => NavigateTo("/login")}>
