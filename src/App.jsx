@@ -20,7 +20,7 @@ import PlansManagement from "./pages/PlansManagement/PlansManagement";
 import CreatePlan from "./pages/CreatePlan/CreatePlan";
 import CreateBranch from "./pages/CreateBranch/CreateBranch";
 import LandingPage from "./pages/LandingPage/LandingPage";
-import { AppLayout, WebLayout } from "./components/Layouts/Layouts";
+import { ProtectedRoute, PublicRoute } from "./components/Layouts/Layouts";
 import AddStaff from "./pages/AddStaff/AddStaff";
 import NavigationHandler from "./functions/NavigationHandler";
 import { Analytics } from '@vercel/analytics/react';
@@ -34,14 +34,14 @@ function App() {
 			<NavigationHandler />
 			<Routes>
 				<Route path="/">
-					<Route path="/" element={<WebLayout />}>
+					<Route path="/" element={<PublicRoute />}>
 						<Route index element={<Navigate to="web" replace />} />
 						<Route path="web" element={<LandingPage />} />
 						<Route path="login" element={<Login />} />
 						<Route path="signup" element={<Signup />} />
 						<Route path="forgot-password" element={<ForgotPassword />} />
 					</Route>
-					<Route path="/app" element={<AppLayout />}>
+					<Route path="/app" element={<ProtectedRoute />}>
 						<Route index element={<Navigate to="dashboard" replace />} />
 						<Route path="dashboard" element={<Dashboard />} />
 						<Route path="members" element={<Members />} />

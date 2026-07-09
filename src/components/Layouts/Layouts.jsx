@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import Topbar from '../Topbar/Topbar';
 import BottomNav from '../BottomNav/BottomNav';
-import { Outlet } from 'react-router';
-import NavigateTo from '../../functions/NavigateTo';
+import { Navigate, Outlet } from 'react-router';
 
 const styles = {
 	content: {
@@ -15,6 +14,7 @@ const styles = {
 		padding: '18px',
 	}
 }
+
 export function AppLayout() {
 	return (
 		<>
@@ -26,32 +26,16 @@ export function AppLayout() {
 		</>
 	);
 }
-export function WebLayout() {
-	const [token, setToken] = useState(null);
-	function isAuthenticated() {
-		const token = localStorage.getItem('token');
-		return token !== null;
-	}
-	if (isAuthenticated()) {
-		console.log(token);
-		return NavigateTo("/app");
-	}
-	return (
-		<Outlet />
-	);
-}
 
 export function ProtectedRoute() {
-	const token = localStorage.getItem("userLogin");
-
+	const token = localStorage.getItem("token");
 	return token
-		? <Outlet />
+		? <AppLayout />
 		: <Navigate to="/login" replace />;
 }
 
-export default function PublicRoute() {
-	const token = localStorage.getItem("userLogin");
-
+export function PublicRoute() {
+	const token = localStorage.getItem("token");
 	return token
 		? <Navigate to="/app" replace />
 		: <Outlet />;

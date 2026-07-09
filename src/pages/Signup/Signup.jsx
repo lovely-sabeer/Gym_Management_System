@@ -20,6 +20,7 @@ export default function Signup() {
 		try {
 			setLoading(true);
 			await signup(form);
+			localStorage.setItem("userDetails", JSON.stringify(form));
 		} catch (err) { console.error(err); }
 		finally { setLoading(false); }
 	};
@@ -36,13 +37,13 @@ export default function Signup() {
 				</section>
 				<div className={styles.Rb__form}>
 					<GlassCard >
-						<InputField type="text" label={"Owner Name"} placeholder={"Full Name"} handleChange={handleChange} name={"ownerName"} handleChange={handleChange} error={error}  />
-						<InputField type="number" label={"Phone"} placeholder={"+1 555 555 5555"} handleChange={handleChange} name={"phone"} handleChange={handleChange} error={error}/>
-						<InputField type="email" label={"Email"} placeholder={"gymmanager@gmail.com"} handleChange={handleChange} name={"email"} handleChange={handleChange} error={error}/>
+						<InputField type="text" label={"Owner Name"} placeholder={"Full Name"} handleChange={handleChange} name={"ownerName"} handleChange={handleChange} error={error} />
+						<InputField type="number" label={"Phone"} placeholder={"+1 555 555 5555"} handleChange={handleChange} name={"phone"} handleChange={handleChange} error={error} />
+						<InputField type="email" label={"Email"} placeholder={"gymmanager@gmail.com"} handleChange={handleChange} name={"email"} handleChange={handleChange} error={error} />
 					</GlassCard>
 					<GlassCard>
-						<InputField type="password" label={"Password"} placeholder={"@Gym1234"} handleChange={handleChange} name={"password"} handleChange={handleChange} error={error}/>
-						<InputField type="password" label={"Confirm Password"} placeholder={"@Gym1234"} handleChange={handleChange} name={"confirmPassword"} handleChange={handleChange} error={error}/>
+						<InputField type="password" label={"Password"} placeholder={"@Gym1234"} handleChange={handleChange} name={"password"} handleChange={handleChange} error={error} />
+						<InputField type="password" label={"Confirm Password"} placeholder={"@Gym1234"} handleChange={handleChange} name={"confirmPassword"} handleChange={handleChange} error={error} />
 					</GlassCard>
 					<button className={styles.Rb__submitButton} disabled={loading} onClick={handleSubmit}>{loading ? "Creating..." : "Create Account"}</button>
 				</div>

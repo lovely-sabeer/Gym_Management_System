@@ -36,8 +36,8 @@ export default function Login() {
 				</section>
 				<form className={styles.Lg__form} onSubmit={handleSubmit}>
 					<GlassCard>
-						<InputField type="email" label={"Email"} placeholder={"gymmanager@gmail.com"} handleChange={handleChange} name={"email"} handleChange={handleChange} error={error}/>
-						<InputField type="password" label={"Password"} placeholder={"@Gym1234"} handleChange={handleChange} name={"password"} handleChange={handleChange} error={error}/>
+						<InputField type="email" label={"Email"} placeholder={"gymmanager@gmail.com"} handleChange={handleChange} name={"email"} handleChange={handleChange} error={error} />
+						<InputField type="password" label={"Password"} placeholder={"@Gym1234"} handleChange={handleChange} name={"password"} handleChange={handleChange} error={error} />
 					</GlassCard>
 					<button type="submit" className={styles.Lg__loginButton} disabled={loading}>{loading ? "Logging In..." : "Login"}</button>
 				</form>
